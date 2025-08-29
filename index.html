@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkur Akademi - Profesyonel Parkur Eğitimi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-black/90 backdrop-blur-lg border-b border-orange-500/30 slide-in-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-orange-500 float">
+                        <i class="fas fa-running mr-2"></i>
+                        PARKUR AKADEMİ
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#anasayfa"
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Anasayfa</a>
+                        <a href="#hakkimizda"
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Hakkımızda</a>
+                        <a href="#gonderiler"
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Gönderiler</a>
+                        <a href="#parkurlar"
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Parkurlar</a>
+                        <a href="#iletisim"
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">İletişim</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMenu()" class="text-white hover:text-orange-500 transition-colors">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobil   -->
+        <div id="mobileMenu" class="hidden md:hidden bg-black/95 backdrop-blur-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#anasayfa"
+                    class="block px-3 py-2 text-white hover:text-orange-500 transition-colors">Anasayfa</a>
+                <a href="#hakkimizda"
+                    class="block px-3 py-2 text-white hover:text-orange-500 transition-colors">Hakkımızda</a>
+                <a href="#gonderiler"
+                    class="block px-3 py-2 text-white hover:text-orange-500 transition-colors">Gönderiler</a>
+                <a href="#parkurlar"
+                    class="block px-3 py-2 text-white hover:text-orange-500 transition-colors">Parkurlar</a>
+                <a href="#iletisim"
+                    class="block px-3 py-2 text-white hover:text-orange-500 transition-colors">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider Section -->
+    <section id="anasayfa" class="pt-16">
+        <div class="slider-container h-screen">
+            <div class="slider-track" id="sliderTrack">
+                <!-- Slide 1 -->
+                <div class="slider-slide gradient-bg">
+                    <div class="absolute inset-0 bg-black/50"></div>
+                    <div class="relative h-full flex items-center justify-center">
+                        <div class="text-center px-4 bounce-in">
+                            <h1 class="text-6xl md:text-8xl font-black mb-6 text-white">
+                                PARKUR<br>
+                                <span class="text-orange-500 typing-animation">AKADEMİ</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                                Profesyonel parkur eğitimi ile limitlerini aş. POMEM, MSÜ ve diğer kurumlar için özel
+                                hazırlanmış programlar.
+                            </p>
+                            <button
+                                class="bg-orange-500 hover:bg-orange-600 text-black font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 pulse-orange">
+                                HEMEN BAŞLA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slider-slide bg-gradient-to-r from-orange-500 to-red-600">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative h-full flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h2 class="text-5xl md:text-7xl font-bold mb-6">FİZİKSEL GÜÇLÜ</h2>
+                            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+                                Profesyonel antrenörler eşliğinde fiziksel gücünüzü ve dayanıklılığınızı artırın.
+                            </p>
+                            <div class="flex justify-center space-x-4">
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-500">500+</div>
+                                    <div class="text-sm">Mezun</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-500">95%</div>
+                                    <div class="text-sm">Başarı Oranı</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-4xl font-bold text-orange-500">10+</div>
+                                    <div class="text-sm">Yıl Tecrübe</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slider-slide bg-gradient-to-br from-black via-gray-900 to-orange-900">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative h-full flex items-center justify-center">
+                        <div class="text-center px-4">
+                            <h2 class="text-5xl md:text-7xl font-bold mb-6">ZİHİNSEL HAZIR</h2>
+                            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto">
+                                Sadece fiziksel değil, zihinsel olarak da sınavlara hazırlanın. Stres yönetimi ve
+                                odaklanma teknikleri.
+                            </p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 float">
+                                    <i class="fas fa-brain text-3xl text-orange-500 mb-2"></i>
+                                    <div class="text-sm font-medium">Zihinsel Hazırlık</div>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 float"
+                                    style="animation-delay: 0.2s">
+                                    <i class="fas fa-dumbbell text-3xl text-orange-500 mb-2"></i>
+                                    <div class="text-sm font-medium">Fiziksel Güç</div>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 float"
+                                    style="animation-delay: 0.4s">
+                                    <i class="fas fa-clock text-3xl text-orange-500 mb-2"></i>
+                                    <div class="text-sm font-medium">Zaman Yönetimi</div>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 float"
+                                    style="animation-delay: 0.6s">
+                                    <i class="fa-solid fa-bullseye text-3xl text-orange-500 mb-2"></i>
+                                    <div class="text-sm font-medium">Hedef Odaklı</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Navigation -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+                <button onclick="goToSlide(0)"
+                    class="w-3 h-3 rounded-full bg-white/50 hover:bg-orange-500 transition-all duration-300"
+                    id="dot0"></button>
+                <button onclick="goToSlide(1)"
+                    class="w-3 h-3 rounded-full bg-white/50 hover:bg-orange-500 transition-all duration-300"
+                    id="dot1"></button>
+                <button onclick="goToSlide(2)"
+                    class="w-3 h-3 rounded-full bg-white/50 hover:bg-orange-500 transition-all duration-300"
+                    id="dot2"></button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Duyuru Alanı -->
+    <section class="py-16 bg-gradient-to-r from-orange-500 to-red-600 fade-in">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div
+                    class="inline-flex items-center bg-black/20 backdrop-blur-sm rounded-full px-6 py-3 mb-4 bounce-in">
+                    <i class="fas fa-bullhorn text-white mr-3 text-xl"></i>
+                    <span class="text-white font-bold text-lg">ÖNEMLI DUYURU</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 slide-in-left">
+                    2025 POMEM Sınavlarına Özel Kampanya!
+                </h2>
+                <p class="text-xl text-white/90 mb-6 slide-in-right">
+                    Erken kayıt yaptıranlar için %30 indirim fırsatı. Son kayıt tarihi: 15 Eylül 2025
+                </p>
+                <button
+                    class="bg-white text-orange-500 hover:bg-gray-100 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 pulse-orange">
+                    DETAYLARI GÖR
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Son Gönderilerimiz -->
+    <section id="gonderiler" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-white">SON </span>
+                    <span class="text-orange-500">GÖNDERİLERİMİZ</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Parkur eğitimi, sağlık ve motivasyon hakkında en güncel içeriklerimiz
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog 1 -->
+                <article class="bg-gray-900 rounded-2xl overflow-hidden card-hover bounce-in"
+                    style="animation-delay: 0.2s">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 relative">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="bg-orange-500 text-black text-xs font-bold px-3 py-1 rounded-full">EĞİTİM</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold text-white mb-3 hover:text-orange-500 transition-colors cursor-pointer">
+                            POMEM Fiziki Yeterlilik Sınavına Nasıl Hazırlanır?
+                        </h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                            POMEM sınavının fiziki yeterlilik bölümünde başarılı olmak için dikkat edilmesi gereken
+                            önemli noktalar ve antrenman teknikleri.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 text-sm">25 Ağustos 2025</span>
+                            <a href="#"
+                                class="text-orange-500 hover:text-orange-400 font-medium text-sm transition-colors">
+                                Devamını Oku <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog2 -->
+                <article class="bg-gray-900 rounded-2xl overflow-hidden card-hover bounce-in"
+                    style="animation-delay: 0.4s">
+                    <div class="h-48 bg-gradient-to-br from-purple-600 to-orange-500 relative">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">MOTİVASYON</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold text-white mb-3 hover:text-orange-500 transition-colors cursor-pointer">
+                            Parkur Eğitiminde Motivasyon Sırları
+                        </h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                            Zor parkur antrenmanlarında motivasyonunuzu korumak ve hedeflerinize ulaşmak için etkili
+                            stratejiler.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 text-sm">23 Ağustos 2025</span>
+                            <a href="#"
+                                class="text-orange-500 hover:text-orange-400 font-medium text-sm transition-colors">
+                                Devamını Oku <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="bg-gray-900 rounded-2xl overflow-hidden card-hover bounce-in"
+                    style="animation-delay: 0.6s">
+                    <div class="h-48 bg-gradient-to-br from-blue-600 to-orange-500 relative">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <span class="bg-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">SAĞLIK</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3
+                            class="text-xl font-bold text-white mb-3 hover:text-orange-500 transition-colors cursor-pointer">
+                            Antrenman Sonrası Toparlanma Rehberi
+                        </h3>
+                        <p class="text-gray-400 mb-4 text-sm leading-relaxed">
+                            Yoğun parkur antrenmanlarından sonra vücudunuzu nasıl hızla toparlar ve performansınızı
+                            artırırsınız.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-orange-500 text-sm">20 Ağustos 2025</span>
+                            <a href="#"
+                                class="text-orange-500 hover:text-orange-400 font-medium text-sm transition-colors">
+                                Devamını Oku <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-12">
+                <button
+                    class="bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                    TÜM GÖNDERİLERİ GÖR
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- parkur calismalarimiz -->
+    <section id="parkurlar" class="py-20 bg-gradient-to-br from-gray-900 to-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-white">PARKUR </span>
+                    <span class="text-orange-500">ÇALIŞMALARIMIZ</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Farklı kurumlara özel tasarlanmış parkur eğitim programlarımız ile hedeflerinize ulaşın
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <!-- pomem parkuru -->
+                <div class="slide-in-left">
+                    <div
+                        class="bg-gradient-to-br from-orange-500/20 to-red-600/20 backdrop-blur-sm border border-orange-500/30 rounded-3xl p-8 card-hover">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mr-4 float">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold text-white">POMEM PARKURU</h3>
+                                <p class="text-orange-500 font-medium">Polis Meslek Eğitim Merkezi</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                <span class="text-gray-300">Engel Aşma Parkuru</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                <span class="text-gray-300">Kondisyon ve Dayanıklılık</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                <span class="text-gray-300">Çeviklik Antrenmanları</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-orange-500 mr-3"></i>
+                                <span class="text-gray-300">Sınav Simülasyonları</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- msü -->
+                <div class="slide-in-right">
+                    <div
+                        class="bg-gradient-to-br from-red-600/20 to-orange-500/20 backdrop-blur-sm border border-red-500/30 rounded-3xl p-8 card-hover">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-red-600 to-orange-500 rounded-2xl flex items-center justify-center mr-4 float">
+                                <i class="fas fa-medal text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl font-bold text-white">MSÜ PARKURU</h3>
+                                <p class="text-red-400 font-medium">Milli Savunma Üniversitesi</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                                <span class="text-gray-300">Askerî Tarzda Parkur</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                                <span class="text-gray-300">Disiplinli Antrenman</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                                <span class="text-gray-300">Takım Çalışması</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-red-500 mr-3"></i>
+                                <span class="text-gray-300">Mental Dayanıklılık</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- özel program -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 text-center card-hover bounce-in"
+                    style="animation-delay: 0.2s">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4 float">
+                        <i class="fas fa-fire text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Yoğun Program</h4>
+                    <p class="text-gray-400 mb-4">Hızlı sonuç almak isteyenler için yoğun antrenman programı</p>
+                    <div class="text-orange-500 font-bold text-2xl mb-2">12 Hafta</div>
+                    <button
+                        class="w-full bg-orange-500 hover:bg-orange-600 text-black font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                        Detayları Gör
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 text-center card-hover bounce-in"
+                    style="animation-delay: 0.4s">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4 float">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Esnek Program</h4>
+                    <p class="text-gray-400 mb-4">Kendi tempinizde ilerlemek isteyenler için esnek antrenman</p>
+                    <div class="text-blue-500 font-bold text-2xl mb-2">24 Hafta</div>
+                    <button
+                        class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                        Detayları Gör
+                    </button>
+                </div>
+
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 text-center card-hover bounce-in"
+                    style="animation-delay: 0.6s">
+                    <div
+                        class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center mx-auto mb-4 float">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Grup Eğitimi</h4>
+                    <p class="text-gray-400 mb-4">Arkadaşlarınızla birlikte eğitim almak isteyenler için</p>
+                    <div class="text-purple-500 font-bold text-2xl mb-2">16 Hafta</div>
+                    <button
+                        class="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300">
+                        Detayları Gör
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- iletisim -->
+    <section id="iletisim" class="py-20 bg-gradient-to-br from-orange-500/10 to-red-600/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="text-white">BİZİMLE </span>
+                    <span class="text-orange-500">İLETİŞİME GEÇİN</span>
+                </h2>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Parkur eğitimi hakkında sorularınız mı var? Hemen bizimle iletişime geçin!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- iletisim forms -->
+                <div class="slide-in-left">
+                    <div class="bg-gray-900/80 backdrop-blur-sm rounded-3xl p-8 border border-orange-500/30">
+                        <h3 class="text-2xl font-bold text-white mb-6">Mesaj Gönder</h3>
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-2">Ad Soyad</label>
+                                    <input type="text"
+                                        class="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-orange-500 focus:outline-none transition-colors duration-300"
+                                        placeholder="Adınız Soyadınız">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-400 mb-2">Telefon</label>
+                                    <input type="tel"
+                                        class="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-orange-500 focus:outline-none transition-colors duration-300"
+                                        placeholder="Telefon Numaranız">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">E-posta</label>
+                                <input type="email"
+                                    class="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-orange-500 focus:outline-none transition-colors duration-300"
+                                    placeholder="E-posta Adresiniz">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Konu</label>
+                                <select
+                                    class="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-orange-500 focus:outline-none transition-colors duration-300">
+                                    <option>POMEM Eğitimi</option>
+                                    <option>MSÜ Eğitimi</option>
+                                    <option>Özel Parkur Eğitimi</option>
+                                    <option>Genel Bilgi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Mesajınız</label>
+                                <textarea rows="4"
+                                    class="w-full bg-black/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-orange-500 focus:outline-none transition-colors duration-300 resize-none"
+                                    placeholder="Mesajınızı buraya yazın..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 pulse-orange">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                MESAJ GÖNDER
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- İletişim Bilgileri -->
+                <div class="slide-in-right">
+                    <div class="space-y-8">
+                        <!-- Adres -->
+                        <div
+                            class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 card-hover">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mr-4 float">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-2">Adresimiz</h4>
+                                    <p class="text-gray-400">Bafra<br>Samsun
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Telefon -->
+                        <div
+                            class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 card-hover">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-green-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 float">
+                                    <i class="fas fa-phone text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-2">Telefon</h4>
+                                    <p class="text-gray-400">+90 212 555 0123<br>+90 533 555 0123</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- e-mail -->
+                        <div
+                            class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 card-hover">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mr-4 float">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-2">E-posta</h4>
+                                    <p class="text-gray-400">info@parkurakademi.com<br>egitim@parkurakademi.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- calisma saatleri -->
+                        <div
+                            class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 card-hover">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mr-4 float">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-white mb-2">Çalışma Saatleri</h4>
+                                    <p class="text-gray-400">Pazartesi - Cumartesi: 06:00 - 22:00<br>Pazar: 08:00 -
+                                        20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- map
+            <div class="mt-16 fade-in">
+                <div class="bg-gray-900 rounded-3xl p-8 border border-orange-500/30">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Konumumuz</h3>
+                    <div
+                        class="bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-2xl h-64 flex items-center justify-center">
+                     
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-6xl text-orange-500 mb-4 float"></i>
+                            <p class="text-xl text-white font-medium">Detaylı Konum Haritası</p>
+                            <p class="text-gray-400">Atatürk Mahallesi, Spor Caddesi No:42, Beşiktaş/İstanbul</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- map -->
+            <div class="mt-16 fade-in">
+                <div class="bg-gray-900 rounded-3xl p-8 border border-orange-500/30">
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Konumumuz</h3>
+
+                    <!-- Grid Layout -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+                        <!-- Sol taraf: Google Maps -->
+                        <div class="rounded-2xl overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47763.67457266752!2d35.86440664475964!3d41.564273868073876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4088984b9dfe0e95%3A0xdd34bf6997b023ed!2sBafra%2C%20Samsun!5e0!3m2!1str!2str!4v1756476035769!5m2!1str!2str"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+                        <!-- Sağ taraf: Adres & ikon -->
+                        <div class="bg-gradient-to-br from-orange-500/20 to-red-600/20 rounded-2xl p-6 text-center">
+                            <i class="fas fa-map-marked-alt text-6xl text-orange-500 mb-4 float"></i>
+                            <p class="text-xl text-white font-medium">Açık Adresimiz</p>
+                            <p class="text-gray-400">Atatürk Mahallesi, Spor Caddesi No:42, Beşiktaş/İstanbul</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-orange-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo ve Açıklama -->
+                <div class="md:col-span-2 fade-in">
+                    <div class="text-2xl font-bold text-orange-500 mb-4 float">
+                        <i class="fas fa-running mr-2"></i>
+                        PARKUR AKADEMİ
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Türkiye'nin en deneyimli parkur eğitim merkezi. POMEM, MSÜ ve diğer kurumların fiziki yeterlilik
+                        sınavlarına profesyonel hazırlık.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-colors duration-300 card-hover">
+                            <i class="fab fa-facebook-f text-black"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-colors duration-300 card-hover">
+                            <i class="fab fa-twitter text-black"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-colors duration-300 card-hover">
+                            <i class="fab fa-instagram text-black"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-orange-500 hover:bg-orange-600 rounded-full flex items-center justify-center transition-colors duration-300 card-hover">
+                            <i class="fab fa-youtube text-black"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hızlı Linkler -->
+                <div class="slide-in-left">
+                    <h4 class="text-lg font-bold text-white mb-4">Hızlı Linkler</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#anasayfa"
+                                class="text-gray-400 hover:text-orange-500 transition-colors duration-300">Anasayfa</a>
+                        </li>
+                        <li><a href="#hakkimizda"
+                                class="text-gray-400 hover:text-orange-500 transition-colors duration-300">Hakkımızda</a>
+                        </li>
+                        <li><a href="#gonderiler"
+                                class="text-gray-400 hover:text-orange-500 transition-colors duration-300">Blog</a></li>
+                        <li><a href="#parkurlar"
+                                class="text-gray-400 hover:text-orange-500 transition-colors duration-300">Eğitim
+                                Programları</a></li>
+                        <li><a href="#iletisim"
+                                class="text-gray-400 hover:text-orange-500 transition-colors duration-300">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- İletişim Bilgileri -->
+                <div class="slide-in-right">
+                    <h4 class="text-lg font-bold text-white mb-4">İletişim</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-orange-500 mr-3"></i>
+                            <span class="text-gray-400">+90 212 555 0123</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-orange-500 mr-3"></i>
+                            <span class="text-gray-400">info@parkurakademi.com</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-3 mt-1"></i>
+                            <span class="text-gray-400">Bafra<br>Samsun</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alt Çizgi -->
+            <div class="border-t border-gray-800 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        © 2025 Parkur Akademi. Tüm hakları saklıdır.
+                    </p>
+                    <div class="flex space-x-4 p-8">
+                        <a href="https://sevincmedya0.com"
+                            class="text-gray-400 hover:text-orange-500 text-sm transition-colors duration-300"
+                            target="_blank">With By
+                            Sevinç Medya</a>
+
+                        <span
+                            class="text-gray-400 hover:text-orange-500 text-sm transition-colors duration-300">&</span>
+
+                        <a href="https://www.instagram.com/mertcan.mtl?igsh=bjY2eTY2Z3NpdnVm"
+                            class="text-gray-400 hover:text-orange-500 text-sm transition-colors duration-300"
+                            target="_blank">Mertcan
+                            MUTLU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Yukarı Çık Butonu -->
+    <button onclick="scrollToTop()" id="backToTop"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 opacity-0 pulse-orange">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
