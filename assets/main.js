@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function goToSlide(index) {
         currentSlide = index;
         document.getElementById('sliderTrack').style.transform = `translateX(-${index * 100}%)`;
-        updateDots();
+        // updateDots();
     }
 
     function nextSlide() {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Auto-play slider
     setInterval(nextSlide, 5000);
-    updateDots();
+    // updateDots();
 
     // Mobile Menu Toggle
     window.toggleMenu = function () {
@@ -185,6 +185,4 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('load', function () {
         document.body.classList.add('fade-in');
     });
-
-
 });

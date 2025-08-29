@@ -176,3 +176,11 @@
     background-position: center;
     position: relative;
 }
+
+/* slider edit */
+.slider-container,
+.slider-track,
+.slider-slide {
+    height: 100vh;
+    overflow: hidden;
+}

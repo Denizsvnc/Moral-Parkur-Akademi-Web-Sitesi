@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parkur Akademi - Profesyonel Parkur Eğitimi</title>
+    <title> Moral Parkur Akademi - Profesyonel Parkur Eğitimi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
@@ -16,7 +16,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold text-orange-500 float">
+                    <div class="text-2xl font-bold text-orange-500">
                         <i class="fas fa-running mr-2"></i>
                         PARKUR AKADEMİ
                     </div>
@@ -30,7 +30,7 @@
                         <a href="#gonderiler"
                             class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Gönderiler</a>
                         <a href="#parkurlar"
-                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Parkurlar</a>
+                            class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">Eğitimlerimiz</a>
                         <a href="#iletisim"
                             class="text-white hover:text-orange-500 transition-colors duration-300 font-medium">İletişim</a>
                     </div>
@@ -43,6 +43,7 @@
             </div>
         </div>
         <!-- mobil   -->
+        <!-- hidden yerine shadow-md ve mobile-menu , md:hidden silindi -->
         <div id="mobileMenu" class="hidden md:hidden bg-black/95 backdrop-blur-lg">
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="#anasayfa"
@@ -148,7 +149,7 @@
             </div>
 
             <!-- Slider Navigation -->
-            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4">
+            <!-- <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-4  ">
                 <button onclick="goToSlide(0)"
                     class="w-3 h-3 rounded-full bg-white/50 hover:bg-orange-500 transition-all duration-300"
                     id="dot0"></button>
@@ -158,7 +159,8 @@
                 <button onclick="goToSlide(2)"
                     class="w-3 h-3 rounded-full bg-white/50 hover:bg-orange-500 transition-all duration-300"
                     id="dot2"></button>
-            </div>
+            </div> -->
+
 
 
         </div>
@@ -502,8 +504,8 @@
                 <!-- İletişim Bilgileri -->
                 <div class="slide-in-right">
                     <div class="space-y-8">
-                        <!-- Adres -->
-                        <div
+                        <!-- adres kartı eklemek icin yorum satırını ac  -->
+                        <!-- <div
                             class="bg-gray-900/60 backdrop-blur-sm rounded-2xl p-6 border border-orange-500/20 card-hover">
                             <div class="flex items-start">
                                 <div
@@ -516,7 +518,7 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         <!-- Telefon -->
                         <div
@@ -619,9 +621,9 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Logo ve Açıklama -->
                 <div class="md:col-span-2 fade-in">
-                    <div class="text-2xl font-bold text-orange-500 mb-4 float">
+                    <div class="text-2xl font-bold text-orange-500 mb-4">
                         <i class="fas fa-running mr-2"></i>
-                        PARKUR AKADEMİ
+                        MORAL PARKUR AKADEMİ
                     </div>
                     <p class="text-gray-400 mb-6 leading-relaxed">
                         Türkiye'nin en deneyimli parkur eğitim merkezi. POMEM, MSÜ ve diğer kurumların fiziki yeterlilik
@@ -719,8 +721,9 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="assets/main.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/main.js"></script>
 </body>
 
 </html>
